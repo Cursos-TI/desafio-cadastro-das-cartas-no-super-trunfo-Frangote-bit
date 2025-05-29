@@ -19,33 +19,35 @@ int main() {
     int pontos_turisticos;
     
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    printf("Digite uma letra de (A-H): ");
-    scanf(" %c", &estado1);
+    printf("Digite uma letra de (A-H): ");  //Envia informação na tela do usuario
+    scanf(" %c", &estado1);   //Guarda a informação fornecida pelo usuario
     
     printf("Digite o código da carta (ex: A01): ");
     scanf("%s", codigo1);
 
     printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]", nome);
+    scanf(" %[^\n]", nome);    //Utilizei  %[^\n] para o scanf ler apos o espaço Ex:São Paulo
 
     printf("Digite a população: ");
-    scanf("%d\n", &populacao);
+    scanf("%d", &populacao);
 
     printf("Digite a área: ");
-    scanf("%f\n", &area1);
+    scanf("%f", &area1);
 
     printf("Digite o PIB: ");
-    scanf("%f\n", &pib1);
+    scanf("%f", &pib1);
 
     printf("Digite os pontos turísticos: ");
-    scanf("%d\n", &pontos_turisticos);
+    scanf("%d", &pontos_turisticos);
+
+    //Enviar todas as informações da carta 1
 
     printf("\n--- Carta 1 ---\n");
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
     printf("Nome da cidade: %s\n", nome);
     printf("População: %d\n", populacao);
-    printf("Área: %.2f km²\n", area1);
+    printf("Área: %.2f km²\n", area1);   // utilizei  %.2f para somente 2 casas decimais
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Número de pontos turísticos: %d\n", pontos_turisticos);
     //carta 2
@@ -60,7 +62,7 @@ int main() {
 
   // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
 
-  printf("\nDigite uma letra de (A-H): ");
+  printf("Digite uma letra de (A-H): ");
     scanf(" %c", &estado2);
 
     printf("Digite o código da carta (ex: A01): ");
